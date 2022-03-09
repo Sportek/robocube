@@ -1,23 +1,20 @@
-int vitesse = 50;
-
 /*
  * Définition des pins utilisés pour le robot.
  * */
 
-
 /*
  * Roues
  * */
-int first_right[2] = {2, 3, 6};
-int first_left[2] = {4, 5, 7};
-int second_right[2] = {8, 9, 12};
-int second_left[2] = {10, 11, 13};
+int first_right[2] = {2, 3};
+int first_left[2] = {4, 5};
+int second_right[2] = {8, 9};
+int second_left[2] = {10, 11};
 
 /*
  * Capteurs
  * */
 
-int NSensor[2] = {22, 23};
+int first_sensor[2] = {12, 13};
 int second_sensor[2] = {14, 15};
 int third_sensor[2] = {16, 17};
 int fourth_sensor[2] = {18, 19};
@@ -45,9 +42,6 @@ void setup() {
     pinMode(second_left[0], OUTPUT);
     pinMode(second_left[1], OUTPUT);
 
-    pinMode(22, OUTPUT);
-    pinMode(24, OUTPUT);
-
     /*
     * Capteurs
     */
@@ -56,25 +50,12 @@ void setup() {
 }
 
 void loop() {
-    analogWrite(7, 255);
-    analogWrite(6, 255);
-    getDirection(Direction::right);
-    delay(1000);
-    analogWrite(7, 100);
-    analogWrite(6, 100);
+//    getDirection(Direction::left)
     delay(1000);
 }
 
-
-void doRotation(Direction direction, int time) {
-
-}
 
 void getDirection(Direction direction) {
-    analogWrite(first_left[2], vitesse);
-    analogWrite(second_left[2], vitesse);
-    analogWrite(first_right[2], vitesse);
-    analogWrite(second_right[2], vitesse);
     switch (direction) {
         case forward:
             goLeft(Direction::forward);
