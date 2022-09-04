@@ -1,7 +1,7 @@
 # Robocube
 Le projet robocube est un projet fait en équipe dans le cadre du cours *Activité d'intégration 360-ASK-03* dans mon parcours collégial.
 
-Membres qui ont participés à ce projet: Coraly Avoine, Jacob Perreault, [Luckas Rakotondrafara](https://github.com/LuckasRakoto) et moi (Gabriel Landry).
+Membres qui ont participés à ce projet: Coraly Avoine, Jacob Perreault, [Luckas Rakotondrafara](https://github.com/LuckasRakoto) et [moi (Gabriel Landry)](https://github.com/Sportek).
 
 <hr>
 
